@@ -7,11 +7,11 @@ const Allroutes = () => {
     <Routes>
         <Route
             path="/"
-            element={<CnpGenerator />} 
+            element={<CnpValidator />} 
             />
         <Route
             path="/verificare-cnp"
-            element={<CnpValidator />} 
+            element={<CnpGenerator />} 
             />
         {/* Add more routes as needed */}
     </Routes>

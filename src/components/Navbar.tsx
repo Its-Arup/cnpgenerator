@@ -11,17 +11,12 @@ const Navbar = () => {
       <div className="max-w-[1000px] h-[4.625rem] mx-auto flex items-center justify-between  ">
         {/* Logo */}
         <div className="mb-2">
-          <img src={logo} alt="Logo"  />
+          <img src={logo} alt="Logo" />
         </div>
         <div className="hidden md:flex gap-8 items-center p-4 font-medium justify-center">
           <div className="text-[0.875rem] text-navbar">
             <Link to="/" className="hover:text-hover transition-colors">
-              GENERATOR CNP
-            </Link>
-          </div>
-          <div className="text-[0.875rem] text-navbar">
-            <Link to="/" className="hover:text-hover transition-colors">
-              GENERARE CNP BULK
+              VALIDARE CNP
             </Link>
           </div>
           <div className="text-[0.875rem] text-navbar">
@@ -29,7 +24,12 @@ const Navbar = () => {
               to="/verificare-cnp"
               className="hover:text-hover transition-colors"
             >
-              VALIDARE CNP
+              GENERATOR CNP
+            </Link>
+          </div>
+          <div className="text-[0.875rem] text-navbar">
+            <Link to="/" className="hover:text-hover transition-colors">
+              GENERARE CNP BULK
             </Link>
           </div>
           <div className="text-[0.875rem] text-navbar">
@@ -59,6 +59,15 @@ const Navbar = () => {
                   className="hover:text-hover transition-colors"
                   onClick={() => setMenuOpen(false)}
                 >
+                  VALIDARE CNP
+                </Link>
+              </div>
+              <div className="text-[0.875rem] text-black">
+                <Link
+                  to="/verificare-cnp"
+                  className="hover:text-hover transition-colors"
+                  onClick={() => setMenuOpen(false)}
+                >
                   GENERATOR CNP
                 </Link>
               </div>
@@ -69,15 +78,6 @@ const Navbar = () => {
                   onClick={() => setMenuOpen(false)}
                 >
                   GENERARE CNP BULK
-                </Link>
-              </div>
-              <div className="text-[0.875rem] text-black">
-                <Link
-                  to="/verificare-cnp"
-                  className="hover:text-hover transition-colors"
-                  onClick={() => setMenuOpen(false)}
-                >
-                  VALIDARE CNP
                 </Link>
               </div>
               <div className="text-[0.875rem] text-black">
